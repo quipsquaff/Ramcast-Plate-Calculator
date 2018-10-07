@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Ramcast Test "Plate Quotes"</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" id="logo">Ramcast Plate Processing Quote</a>
+      </div>
+      <button type="button" class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#page-nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="page-nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-link" href="">Link1</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Link2</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Link3</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">Enter Dimensions Here to Recieve Quote:</h1>
+          <form action="">
+            Length:<br>
+            <input id = "userInputLength" type="number" name="Length" placeholder="Enter Length Here" value="">
+            <br>
+            <br>
+            Width:<br>
+            <input id = "userInputWidth" type="number" name="Width" placeholder="Enter Width Here" value="">
+            <br>
+            <br>
+            <select id ="selectThickness" type="number" name="Thickness" form="ThicknessForm">
+              <option value=.0299>22 G.A.</option>
+              <option value=.0359>20 G.A.</option>
+              <option value=.0478>18 G.A.</option>
+              <option value=.0600>16 G.A.</option>
+              <option value=.0830>14 G.A.</option>
+              <option value=.1046>12 G.A.</option>
+              <option value=.1196>11 G.A.</option>
+              <option value=.1345>10 G.A.</option>
+              <option value=.1875>3/16" Thick</option>
+              <option value=.2500>1/4" Thick</option>
+              <option value=.3125>5/16" Thick</option>
+              <option value=.3750>3/8" Thick</option>
+              <option value=.4375>7/16" Thick</option>
+              <option value=.5000>1/2" Thick</option>
+              <option value=.6250>5/8" Thick</option>
+              <option value=.7500>3/4" Thick</option>
+              <option value=.8750>7/8" Thick</option>
+              <option value=1.000>1" Thick</option>
+              <option value=1.250>1 1/4" Thick</option>
+              <option value=1.500>1 1/2" Thick</option>
+              <option value=1.750>1 3/4" Thick</option>
+              <option value=2.000>2" Thick</option>
+              <option value=2.250>2 1/4" Thick</option>
+              <option value=2.500>2 1/2" Thick</option>
+              <option value=2.750>2 3/4" Thick</option>
+              <option value=3.000>3" Thick</option>
+              <option value=3.250>3 1/4" Thick</option>
+              <option value=3.500>3 1/2" Thick</option>
+              <option value=3.750>3 3/4" Thick</option>
+              <option value=4.000>4" Thick</option>
+              <option value=4.250>4 1/4" Thick</option>
+              <option value=4.500>4 1/2" Thick</option>
+              <option value=4.750>4 3/4" Thick</option>
+            </select>
+            <br><br>
+            <input id = "subBtn"  type = "submit" class = "btn btn-success" value="Click Me for Quote">
+          </form> 
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
+  </footer>
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
