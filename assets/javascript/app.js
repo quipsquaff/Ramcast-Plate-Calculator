@@ -1,16 +1,28 @@
 $(document).ready(function() {
-var userLength = "";
-var userWidth = "";
-var userThickness = "";
+
 var plateWeightPerSqInch = .2836;
 var platePricePerPlasma = 1.50;
 var platePricePerShear = .95;
 var platePricePerSheet = .75;
-var displayPricePlasma = userLength*userWidth*userThickness*plateWeightPerSqInch*platePricePerPlasma;
-var displayPriceShear = userLength*userWidth*userThickness*plateWeightPerSqInch*platePricePerShear;
-var displayPriceSheet = userLength*userWidth*userThickness*plateWeightPerSqInch*platePricePerSheet;
+
+function userDimensionsInputs() {
+    var inputLength = document.getElementById("userInputLength").value;
+    var inputWidth = document.getElementById("userInputWidth").value;
+    var inputThickness = document.getElementById("selectThickness").value;
+    var pricePlasma = inputLength*inputWidth*inputThickness*plateWeightPerSqInch*platePricePerPlasma;
+    pricePlasma = pricePlasma.toFixed(2);
+    var priceShear = inputLength*inputWidth*inputThickness*plateWeightPerSqInch*platePricePerShear;
+    priceShear = priceShear.toFixed(2);
+    var priceSheet = inputLength*inputWidth*inputThickness*plateWeightPerSqInch*platePricePerSheet;
+    priceSheet = priceSheet.toFixed(2);
+    $("#estimatePlasma").text("Hi-Definition Plasma cutting estimate " + "$" + pricePlasma);
+    $("#estimateShear").text("Manual Shearing estimate " + "$" + priceShear);
+    $("#estimateSheet").text("Material Value " + "$" + priceSheet);
+}
+
 
 $("#subBtn").click(function(event) {
     event.preventDefault();
+    userDimensionsInputs();
 });
 });
