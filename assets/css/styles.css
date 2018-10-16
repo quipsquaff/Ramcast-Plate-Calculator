@@ -89,3 +89,8 @@ form{
   border-color: white;
   background-color: red;
 } 
+
+#plasmaImage {
+  width: 45%;
+  height: auto;
+}

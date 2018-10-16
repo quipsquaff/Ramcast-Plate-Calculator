@@ -15,7 +15,6 @@ function userDimensionsInputs() {
     priceShear = priceShear.toFixed(2);
     var priceSheet = inputLength*inputWidth*inputThickness*plateWeightPerSqInch*platePricePerSheet;
     priceSheet = priceSheet.toFixed(2);
-    $("#estimatePlasma").html($('<div>', {id: "plasmaImage"}));
     $("#estimatePlasma").text("Hi-Definition Plasma cutting estimate " + "$" + pricePlasma);
     $("#estimateShear").text("Manual Shearing estimate " + "$" + priceShear);
     $("#estimateSheet").text("Material Value " + "$" + priceSheet);
@@ -25,6 +24,7 @@ function userDimensionsInputs() {
 
 $("#subBtn").click(function(event) {
     event.preventDefault();
+    $("#estimatePlasmaImage").prepend('<img id="plasmaImage" src="assets/imgs/16062186393_7b69dd6257_o.jpg"/>')
     userDimensionsInputs();
 });
 });
