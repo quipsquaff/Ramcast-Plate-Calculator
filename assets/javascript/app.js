@@ -15,9 +15,11 @@ function userDimensionsInputs() {
     priceShear = priceShear.toFixed(2);
     var priceSheet = inputLength*inputWidth*inputThickness*plateWeightPerSqInch*platePricePerSheet;
     priceSheet = priceSheet.toFixed(2);
+    $("#estimatePlasma").html($('<div>', {id: "plasmaImage"}));
     $("#estimatePlasma").text("Hi-Definition Plasma cutting estimate " + "$" + pricePlasma);
     $("#estimateShear").text("Manual Shearing estimate " + "$" + priceShear);
     $("#estimateSheet").text("Material Value " + "$" + priceSheet);
+
 }
 
 

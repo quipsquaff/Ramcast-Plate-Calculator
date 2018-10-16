@@ -7,48 +7,23 @@
   <link rel="shortcut icon" type="image/png" href="assets/imgs/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Ramcast Test "Plate Quotes"</title>
-
-
+  <title>Ramcast Plate "Estimator"</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-
+  <link rel="stylesheet" href="assets/css/reset.css" media="screen">
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-    <div class="container">
-
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html" id="logo">Ramcast Plate Processing Quote</a>
-      </div>
-      <button type="button" class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#page-nav-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="page-nav-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="nav-link" href="">Link1</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Link2</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Link3</a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
-
+  <div class="container">
+      <div id="navbar">
+          <img id="logo1" src="assets/imgs/Ramcast-Logo-1.png" alt="RamcastLogo">
+          <img id="logo2" src="assets/imgs/RAMCASTBLACKFONT-2018.png" alt="RamcastFontLogo">
+          <a class="home1" href="#home">Home</a>
+          <a class="news1" href="#news">News</a>
+          <a class="contact1" href="#contact">Contact</a>
+         </div>
+        </div>
   <main class="container">
     <section class="row">
       <div class="col-md-3">
@@ -67,7 +42,7 @@
               <option value=.0299>22 G.A.</option>
               <option value=.0359>20 G.A.</option>
               <option value=.0478>18 G.A.</option>
-              <option value=.0600>16 G.A.</option>
+              <option value=.0625>16 G.A.</option>
               <option value=.0830>14 G.A.</option>
               <option value=.1046>12 G.A.</option>
               <option value=.1196>11 G.A.</option>
@@ -99,11 +74,11 @@
               <option value=4.750>4 3/4" Thick</option>
             </select>
             <br><br>
-            <input id = "subBtn"  type = "submit" class = "btn btn-success" value="Click Me for Quote">
+            <input id = "subBtn"  type = "submit" class = "btn btn-success" value="Click me for an estimate">
           </form> 
         </article>
       </div>
-      <div class="col-md-9">
+      <div id="estimations" class="col-md-9">
   
           <h1 class="estimates">Estimate:</h1>
           <div id="estimatePlasma">
@@ -123,10 +98,12 @@
       &copy; Copyright
     </p>
   </footer>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/nav.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
 </body>
 
 </html>
