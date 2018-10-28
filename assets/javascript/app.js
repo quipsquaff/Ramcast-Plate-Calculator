@@ -18,7 +18,23 @@ $(document).ready(function() {
         $("#estimatePlasma").text("Hi-Definition Plasma cutting estimate " + "$" + pricePlasma);
         $("#estimateShear").text("Manual Shearing estimate " + "$" + priceShear);
         $("#estimateSheet").text("Material Value " + "$" + priceSheet);
+
+        if (inputLength>240 || inputLength<0){
+            alert ('Please enter a Length between 1" inch and 240" inches')
+            location.reload();
+        }
+
+        else if (inputWidth>120 || inputWidth<0){
+            alert ('Please enter a Width between 1" inch and 120" inches')
+            location.reload();
+        }
     
+        else if (inputThickness>.501) {
+            $("#estimateShear").empty();
+            $("#estimateShear").text("This material is too thick to shear");
+        
+
+        }
     }
     
     
